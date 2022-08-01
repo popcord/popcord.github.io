@@ -16,7 +16,9 @@
     <title>PopCord - ChatBox</title>
 
 
+    <link rel="stylesheet" href="script/dark.css">
     <link rel="icon" href="img/discord.png" type="image/x-icon">
+    <link rel="stylesheet" href="./script/style.css">
 
 
 
@@ -57,10 +59,69 @@
 </head>
 
 <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item"
+                href="https://discord.com/oauth2/authorize?client_id=994970912271122452&permissions=1644971949567&redirect_uri=https%3A%2F%2Fdiscord.gg%2FU3u5EyrgTD&response_type=code&scope=bot%20guilds.join">
+                <img src="img/discord.png" width="30px" height="55px">
+            </a>
+
+            <a role="button" class="navbar-burger" data-target="navbarBasicExample" aria-label="menu"
+                aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+
+
+            <div class="navbar-menu" id="navMenu">
+            </div>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <!-- ?Change the navbar-start to navbar-end if u want the links to be at right.-->
+
+                <a class="navbar-item" href="commands">
+                    Commands
+                </a>
+                <a class="navbar-item" href="https://discord.com/invite/U3u5EyrgTD" target="_blank">
+                    Support
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Vote
+                    </a>
+                    <!--Dropdown menu for vote-->
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="https://top.gg/bot/994970912271122452" target="_blank">
+                            Top.gg
+                        </a>
+                        <a class="navbar-item" href="https://discordbotlist.com/bots/popcord" target="_blank">
+                            discordbotlist
+                        </a>
+                        <a class="navbar-item" href="put the link here" target="_blank">
+                            comming soon
+                        </a>
+                        <a class="navbar-item" href="put the link here" target="_blank">
+                            comming soon
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </nav>
     <widgetbot server="911936163395301379" channel="911936164095729680" frameborder="0"
-        style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px"
+        style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;"
         height="100%" width="100%"></widgetbot>
-        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+    <script src="script/style.js"></script>
 </body>
 
 </html>
