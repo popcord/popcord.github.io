@@ -47,8 +47,8 @@
     <meta name=apple-mobile-web-app-title content=PopCord>
     <meta name=mobile-web-app-capable content=yes>
     <meta name=application-name content=PopCord>
-    
-    
+
+
     <meta property="og:keywords"
         content="PopCord, Popcord, popCord, Discord bot, Best Discord bot, vote, pop, cord, popcord, Pop, bot, Bot, POPCORD, BOT, Discord, https://site-fr.github.io/popcord/">
     <meta name="keywords"
@@ -68,88 +68,6 @@
     </style>
 
 
-
-    <script>
-
-        const p = {
-            help() {
-                console.log("p.help() : this \np.clear() : clear console\np.support(): open support server link\n\nmade by spidirman#4534");
-            },
-            support() {
-                window.open("https://discord.com/invite/U3u5EyrgTD")
-                console.log("server support oppened");
-            },
-            clear() {
-                clear()
-                console.log("console cleared");
-                fff()
-            },
-        };
-
-        fff()
-        function fff() {
-            var wait = 'color:#7289da; font-size: 100px; font-weight: bold; -webkit-text-stroke: 3px black;'
-            var data = 'color:red; font-size: 20px; font-weight: bold;'
-            console.log("%cWait !", wait);
-            console.log("%cyou can write p.help() in the console for custom commands!", data)
-        };
-
-
-
-        function myFunction() {
-            const bgc = document.getElementById("formehaut").style.backgroundColor;
-
-            if (bgc == 'rgb(40, 123, 201)') {
-
-                document.getElementById("colormode").className = "fa-solid fa-moon";
-                document.getElementById("colormode").textContent = " dark";
-                document.getElementById("colormode").style.color = "rgb(35, 88, 104)";
-
-                document.getElementById("body").style.backgroundColor = "rgb(23, 22, 22)";
-
-                document.getElementById("formehaut2").style.fill = "rgb(23, 22, 22)";
-                document.getElementById("formehaut").style.backgroundColor = "rgb(31, 38, 49)";
-
-                document.getElementById("navbar").style.backgroundColor = "rgb(44, 44, 44)";
-                document.getElementById("navbar-menu").style.backgroundColor = "rgb(44, 44, 44)";
-
-                document.getElementById("formebas").style.fill = "rgb(31, 38, 49)";
-
-                document.getElementById("formefooter").style.fill = "rgb(31, 38, 49)";
-                document.getElementById("footer").style.backgroundColor = "rgb(31, 38, 49)";
-
-                console.log("darkmode")
-            }
-            else {
-                document.getElementById("colormode").className = "fa-solid fa-sun";
-                document.getElementById("colormode").textContent = " light";
-                document.getElementById("colormode").style.color = "rgb(189, 195, 80)";
-
-                document.getElementById("body").style.backgroundColor = "rgb(0, 43, 54)";
-
-                document.getElementById("formehaut2").style.fill = "rgb(0, 43, 54)";
-                document.getElementById("formehaut").style.backgroundColor = "rgb(40, 123, 201)";
-
-
-                document.getElementById("navbar").style.backgroundColor = "rgb(7, 54, 66)";
-                document.getElementById("navbar-menu").style.backgroundColor = "rgb(7, 54, 66)";
-
-                document.getElementById("formebas").style.fill = "rgb(40, 123, 201)";
-
-                document.getElementById("formefooter").style.fill = "rgb(7, 54, 66)";
-                document.getElementById("footer").style.backgroundColor = "rgb(7, 54, 66)";
-
-                console.log("lightmode")
-
-            }
-
-        };
-
-
-
-
-
-    </script>
 
 </head>
 <style>
@@ -386,5 +304,94 @@
         </div>
 
 </body>
+<script>
+    const p = {
+        help() {
+            console.log("p.help() : this \np.clear() : clear console\np.support(): open support server link\n\nmade by spidirman#4534");
+        },
+        support() {
+            window.open("https://discord.com/invite/U3u5EyrgTD")
+            console.log("server support oppened");
+        },
+        clear() {
+            clear()
+            console.log("console cleared");
+            fff()
+        },
+    };
+
+    fff()
+    function fff() {
+        var wait = 'color:#7289da; font-size: 100px; font-weight: bold; -webkit-text-stroke: 3px black;'
+        var data = 'color:red; font-size: 20px; font-weight: bold;'
+        console.log("%cWait !", wait);
+        console.log("%cyou can write p.help() in the console for custom commands!", data)
+    };
+
+    const body = document.getElementById('body');
+    const button = document.getElementById('colormode');
+
+    function light() {
+        body.classList.remove('dark');
+        localStorage.setItem("theme", "light");
+        document.getElementById("colormode").className = "fa-solid fa-sun";
+        document.getElementById("colormode").textContent = " light";
+        document.getElementById("colormode").style.color = "rgb(189, 195, 80)";
+
+        document.getElementById("body").style.backgroundColor = "rgb(0, 43, 54)";
+
+        document.getElementById("formehaut2").style.fill = "rgb(0, 43, 54)";
+        document.getElementById("formehaut").style.backgroundColor = "rgb(40, 123, 201)";
+
+
+        document.getElementById("navbar").style.backgroundColor = "rgb(7, 54, 66)";
+        document.getElementById("navbar-menu").style.backgroundColor = "rgb(7, 54, 66)";
+
+        document.getElementById("formebas").style.fill = "rgb(40, 123, 201)";
+
+        document.getElementById("formefooter").style.fill = "rgb(7, 54, 66)";
+        document.getElementById("footer").style.backgroundColor = "rgb(7, 54, 66)";
+
+        console.log("lightmode")
+    }
+
+    function dark() {
+        body.classList.add('dark');
+        localStorage.setItem("theme", "dark");
+        document.getElementById("colormode").className = "fa-solid fa-moon";
+        document.getElementById("colormode").textContent = " dark";
+        document.getElementById("colormode").style.color = "rgb(35, 88, 104)";
+
+        document.getElementById("body").style.backgroundColor = "rgb(23, 22, 22)";
+
+        document.getElementById("formehaut2").style.fill = "rgb(23, 22, 22)";
+        document.getElementById("formehaut").style.backgroundColor = "rgb(31, 38, 49)";
+
+        document.getElementById("navbar").style.backgroundColor = "rgb(44, 44, 44)";
+        document.getElementById("navbar-menu").style.backgroundColor = "rgb(44, 44, 44)";
+
+        document.getElementById("formebas").style.fill = "rgb(31, 38, 49)";
+
+        document.getElementById("formefooter").style.fill = "rgb(31, 38, 49)";
+        document.getElementById("footer").style.backgroundColor = "rgb(31, 38, 49)";
+
+        console.log("darkmode")
+    }
+
+
+    function toggleDark() {
+        if (body.classList.contains('dark')) {
+            light()
+        } else {
+            dark()
+        }
+    }
+
+    if (localStorage.getItem("theme") === "dark") {
+        dark()
+    }
+
+    button.addEventListener('click', toggleDark);
+</script>
 
 </html>
