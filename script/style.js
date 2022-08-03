@@ -20,29 +20,44 @@ counters.forEach(counter => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
 
 
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-  if ($navbarBurgers.length > 0) {
 
 
-    $navbarBurgers.forEach(el => {
-      el.addEventListener('click', () => {
 
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
 
-      });
-    });
-  }
 
-});
+
+
+
+
 
 $(document).ready(function () {
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    if ($navbarBurgers.length > 0) {
+
+
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+
 
 
   $(".navbar-burger").click(function () {
@@ -51,7 +66,6 @@ $(document).ready(function () {
     $(".navbar-menu").toggleClass("is-active");
 
   });
-});
 
 
 
@@ -63,7 +77,6 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
   $(".open").click(function () {
     var container = $(this).parents(".topic");
     var answer = container.find(".answer");
