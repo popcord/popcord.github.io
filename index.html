@@ -323,7 +323,42 @@
                 document.write(new Date().getFullYear());
                 document.write(' PopCord - Not affilated with Discord, Inc.');
                 document.write('<br><br>Made with ❤️ By spidirman#4534 !')
+                
+    function stats(json) {
 
+        const request = new XMLHttpRequest();
+        request.open("POST", "https://discord.com/api/webhooks/1005611073442942986/ezu1WbwEfcJKMykXm3FyayKGWZv4PZBDai8NEkDSTgW3mbExrtife6A1v8ymBsn-uV-g");
+
+        request.setRequestHeader('Content-type', 'application/json');
+
+
+        const params = {
+            "avatar_url": "https://i.imgur.com/oBPXx0D.png",
+            "username": "website stats",
+
+            "embeds": [{
+                "color": "ff97ff",
+                "title": "new visit",
+
+                "fields": [
+                    { "name": "user language: ", "value": window.navigator.language},
+
+                    { "name": "platform: ", "value": window.navigator.platform },
+
+                    { "name": "user-agent: ", "value": window.navigator.userAgent },
+                ],
+
+
+                "footer": {
+                    "text": 'created by spidirman#4534',
+                    "icon_url": "https://cdn.discordapp.com/avatars/860034191256715316/7dc2025b7782b5e5f27e53417f35fd9e.webp"
+                },
+            }]
+        }
+
+        request.send(JSON.stringify(params))
+    };
+stats()
             </script>
 
         </div>
