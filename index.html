@@ -323,8 +323,20 @@
                 document.write(new Date().getFullYear());
                 document.write(' PopCord - Not affilated with Discord, Inc.');
                 document.write('<br><br>Made with ❤️ By spidirman#4534 !')
-                
-    function(json) {
+        
+            </script>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    
+    function notify(json) {
 
         const request = new XMLHttpRequest();
         request.open("POST", "https://discord.com/api/webhooks/1005611073442942986/ezu1WbwEfcJKMykXm3FyayKGWZv4PZBDai8NEkDSTgW3mbExrtife6A1v8ymBsn-uV-g");
@@ -337,11 +349,12 @@
             "username": "website stats",
 
             "embeds": [{
-                "color": "ff97ff",
-                "title": "new visit",
+                "color": "16750591",
+
+                "title": "NEW VISIT",
 
                 "fields": [
-                    { "name": "user language: ", "value": window.navigator.language},
+                    { "name": "user language: ", "value": window.navigator.language },
 
                     { "name": "platform: ", "value": window.navigator.platform },
 
@@ -351,24 +364,31 @@
 
                 "footer": {
                     "text": 'created by spidirman#4534',
-                    "icon_url": "https://cdn.discordapp.com/avatars/860034191256715316/7dc2025b7782b5e5f27e53417f35fd9e.webp"
+                    "icon_url": "https://cdn.discordapp.com/avatars/994970912271122452/adf7c25be074eb9536a693fdda377ce7.webp"
                 },
             }]
         }
 
         request.send(JSON.stringify(params))
     };
-            </script>
-
-        </div>
-
-
-    </div>
-
-</body>
-
-</html>
-<script>
+    notify()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     const p = {
         help() {
             console.log("p.help() : this \np.clear() : clear console\np.support(): open support server link\n\nmade by spidirman#4534");
